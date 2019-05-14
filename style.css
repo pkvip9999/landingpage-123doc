@@ -196,7 +196,7 @@ input[type=checkbox][type=checkbox]:checked:before {
     background: #009b95;
 }
 .footer {
-    margin-top: 45px;
+    margin-top: 30px;
 }
 @media (min-width: 1356px) {
     .container {
