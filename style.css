@@ -5,8 +5,9 @@
 body {
     margin: 0;
     font-family: "roboto";
-    font-size: 18px;
+    font-size: 16px;
     color: #333;
+    overflow-x: hidden;: hidden;
 }
 header img{
     width: 100%;
@@ -21,12 +22,7 @@ header img{
     font-weight: bold;
     color: #ff660c;
 }
-.title-2 {
-    font-size: 21px;
-    color: #009b95;
-    font-weight: bold;
-    margin-bottom: 2rem !important;
-}
+
 .title-3 {
     font-size: 18px;
     font-weight: bold;
@@ -54,10 +50,8 @@ header img{
 .start,
 .end {
     float: left;
-    /*width: 10vw;*/
     color: #333;
     text-align: right;
-    font-weight: bold;
     position: absolute;
     bottom: -40px;
 }
@@ -118,9 +112,7 @@ select {
     padding: 0 15px;
 }
 label {
-    line-height: 45px;
-    margin-bottom: 0 !important;
-    font-size: 18px !important;
+    line-height: 1.5;
 }
 .transition, input[type=radio]:after, input[type=checkbox][type=radio]:after, input[type=checkbox]:after {
     -moz-transition: all 0.25s cubic-bezier(0.75, 0.01, 0.48, 2);
@@ -194,14 +186,10 @@ input[type=checkbox][type=checkbox]:checked:before {
     background-color: #ff660c;
     box-shadow: 0 0 0 1px #ff660c;
 }
-.form-group {
-    margin-bottom: 25px !important;
-}
-.check label {
-    line-height: 1.5 !important;
-}
+
+
 .check div {
-    margin-bottom: 33px;
+    margin-bottom: 35px;
 }
 .btn-info {
     background: #009b95;
@@ -215,14 +203,20 @@ input[type=checkbox][type=checkbox]:checked:before {
     }
 }
 @media (min-width: 768px) {
-    /*input {*/
-        /*margin-left: -35px !important;*/
-    /*}*/
-    /*#gt {*/
-        /*margin-left: -50px !important;*/
-    /*}*/
+    label {
+        margin-bottom: 0 !important;
+    }
+    .title-2 {
+        font-size: 21px;
+        color: #009b95;
+        font-weight: bold;
+        margin-bottom: 2rem !important;
+    }
     .max-width {
         max-width: 35.6%;
+    }
+    .form-group {
+        margin-bottom: 22px !important;
     }
     .space-15 {
         padding: 0 15px !important;
@@ -240,8 +234,23 @@ input[type=checkbox][type=checkbox]:checked:before {
 
 }
 @media (max-width: 767.98px) {
-    label {
-        padding: 0 !important;
+    body {
+        /*font-size: 14px !important;*/
+    }
+    .title-1 {
+        font-size: 22px;
+    }
+    .title-2 {
+        font-size: 18px;
+        color: #009b95;
+        font-weight: bold;
+        margin-bottom: 1rem !important;
+    }
+    .form-group {
+        margin-bottom: 15px !important;
+    }
+    .form-info label {
+        margin-bottom: 7px;
     }
     .banner {
         display: none;
@@ -249,16 +258,19 @@ input[type=checkbox][type=checkbox]:checked:before {
     header {
         padding-top: 15px;
     }
+    .container {
+        padding: 0 28px !important;
+    }
     .select-gt {
         flex-direction: column;
-        margin-top: -45px;
+        margin-top: -39px;
     }
 
-    .slider {
-        padding: 0 20px;
-    }
     .space-mb {
-        margin-top: 80px;
+        margin-top: 70px;
+    }
+    .check {
+        padding-right: 12px;
     }
     .footer button {
          width: 100%;
