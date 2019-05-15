@@ -219,6 +219,9 @@ input[type=checkbox][type=checkbox]:checked:before {
     .form-group {
         margin-bottom: 22px !important;
     }
+    .option {
+        margin-top: 40px;
+    }
     .space-15 {
         padding: 0 15px !important;
     }
@@ -264,7 +267,7 @@ input[type=checkbox][type=checkbox]:checked:before {
     }
     .select-gt {
         flex-direction: column;
-        margin-top: -39px;
+        margin-top: -37px;
     }
 
     .space-mb {
