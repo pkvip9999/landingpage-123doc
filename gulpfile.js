@@ -40,7 +40,7 @@ gulp.task('images', function(){
         .pipe(cache(imagemin({
             interlaced: true
         })))
-        .pipe(gulp.dest('dist/img'))
+        .pipe(gulp.dest('dist/imgs'))
 });
 gulp.task('fonts', function() {
     return gulp.src('app/fonts/**/*')
